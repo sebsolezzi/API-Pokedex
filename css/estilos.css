@@ -1,0 +1,269 @@
+html {
+  font-size: 62.5%;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Estilos modal-------------- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+}
+.efecto {
+  padding: 1rem;
+  color: rgb(126, 126, 238);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.info-ataque {
+  width: 30rem;
+  background-color: white;
+  margin: 4rem auto;
+  padding: 1rem;
+}
+
+.info-ataque h3 {
+  margin-left: 1rem;
+}
+
+.nombre-ataque {
+  text-align: center;
+  color: rgb(212, 29, 29);
+  font-size: 4rem;
+}
+
+.efecto-ataque {
+  margin: 2rem auto 1rem auto !important;
+  border-bottom: 3px solid rgb(212, 29, 29);
+  text-align: center;
+  color: rgb(212, 29, 29);
+}
+
+.btn-cerrar {
+  display: block;
+  margin: auto;
+  margin-top: 1rem !important;
+  background-color: rgb(212, 29, 29);
+  color: white;
+  border: none;
+  width: 5.8rem;
+  height: 5.8rem;
+  border-radius: 100%;
+  padding: 1.5rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.btn-cerrar:hover {
+  background-color: rgb(126, 126, 238);
+  transform: rotate(180deg);
+}
+
+/* Estilos */
+h1 {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  margin: 0;
+}
+
+header {
+  margin: 0;
+  background-color: rgb(212, 29, 29);
+}
+.shadow-box{
+  box-shadow: 2px 2px 7px rgb(126, 126, 238);
+}
+.nombre, .generacion{
+  margin: 2rem auto;
+  width: 34rem;
+  background-color: rgb(212, 29, 29);
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+.generacion{
+  display: none;
+ 
+}
+.nombre > input{
+  width: 70%;
+}
+.nombre > input[type=radio]{
+  font-size: 2rem;
+  cursor: pointer;
+}
+.btn{
+  font-size: 2rem;
+  color:white;
+  background-color: rgb(126, 126, 238);
+  border-style: none;
+  padding: .1rem;
+  cursor: pointer;
+}
+select{
+  font-size: 90%;
+}
+.flex{
+  font-size: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contenedor-lista-poke{
+  display: none;
+}
+
+.pokemon{
+  display: none;
+  width: 34rem;
+  margin: auto;
+  margin-top: 3rem;
+  border: 2px solid rgb(212, 29, 29);
+  border-radius: 10px;
+  padding: 2rem;
+}
+.pokemon-name{
+  text-align: center;
+  font-size: 2rem;
+}
+.img-pokemon{
+  display: block;
+  margin: auto;
+  width: 70%;
+  height: 15.5rem;
+}
+.tipo-pokemon{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.pokemon-moves{
+  display: none;
+  width: 34rem;
+  margin: auto;
+  margin-top: 3rem;
+  border: 2px solid rgb(212, 29, 29);
+  border-radius: 10px;
+  padding: 2rem;
+}
+.pokemon-moves > ul > li{
+  list-style: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(126, 126, 238);
+  transition: .3s ease-out;
+  margin-top: 1rem;
+}
+.pokemon-moves > ul > li:hover{
+  list-style: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(212, 29, 29);
+  text-decoration: underline;
+  
+}
+
+/* GRilla */
+
+.grilla{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  align-items: baseline;
+}
+
+@media screen and (min-width:768px) {
+  .grilla{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+
+/* Spiner------------ */
+.sk-cube-grid {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: rgb(126, 126, 238);;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
+
